@@ -1,7 +1,7 @@
 package design.repository;
 
-import design.Gender;
-import design.Guest;
+import design.Constants.Gender;
+import design.model.Guest;
 
 import java.util.Arrays;
 import java.util.List;

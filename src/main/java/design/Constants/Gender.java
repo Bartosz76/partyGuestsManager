@@ -1,4 +1,4 @@
-package design;
+package design.Constants;
 
 public enum Gender {
 

@@ -1,6 +1,6 @@
-package design;
+package design.model;
 
-import design.Gender;
+import design.Constants.Gender;
 
 public class Guest {
 
@@ -36,5 +36,14 @@ public class Guest {
 
     public void setGender(Gender gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Guest{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
     }
 }
