@@ -2,16 +2,14 @@ package design;
 
 import design.Constants.Attractions;
 import design.model.Guest;
-import design.repository.AttractionsList;
 import design.service.FilteringMethods;
 
 import java.util.List;
-import java.util.stream.IntStream;
 
-import static design.repository.GuestList.*;
-import static design.repository.AttractionsList.*;
+import static design.repository.AttractionsList.getAttractions;
+import static design.repository.GuestList.getGuests;
 import static java.util.stream.Collectors.*;
-import static design.service.FilteringMethods.*;
+import static design.Constants.TextColors.*;
 
 public class GuestManager {
 
@@ -27,20 +25,20 @@ public class GuestManager {
                         .collect(toMap(
                                 guest -> guest.getName() + "-" + guest.getAge(),
                                 guest -> guest
-                        ))
+                        )) + ANSI_BLUE
         );
 
         List<Guest> sortGuestsIntoNameCategories = getGuests();
         System.out.println(
                 sortGuestsIntoNameCategories.stream()
-                                            .collect(groupingBy(Guest::getName))
+                                            .collect(groupingBy(Guest::getName)) + ANSI_PURPLE
         );
 
         List<Guest> groupAgesOfGuestWithSameName = getGuests();
         System.out.println(
                 groupAgesOfGuestWithSameName.stream()
                 .collect(groupingBy(Guest::getName,
-                        mapping(Guest::getAge, toList())))
+                        mapping(Guest::getAge, toList()))) + ANSI_GREEN
         );
 
         List<Attractions> priceOfAllAttractionsLessThanFiveCostForTwoGuests = getAttractions();
@@ -48,7 +46,7 @@ public class GuestManager {
                 priceOfAllAttractionsLessThanFiveCostForTwoGuests.stream()
                 .filter(FilteringMethods::isLessThanFive)
                 .map(FilteringMethods::priceForTwo)
-                .reduce(0, (a, b) -> a + b)
+                .reduce(0, (a, b) -> a + b) + ANSI_RED
         );
 
         List<Attractions> allAttractionsSevenCostOrless = getAttractions();
@@ -72,7 +70,7 @@ public class GuestManager {
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }
-                System.out.println("Counting down... " + i);
+                System.out.println("Counting down... " + i + ANSI_CYAN);
             }
             System.out.println("Party's over :<");
         });
