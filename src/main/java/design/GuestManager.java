@@ -2,6 +2,7 @@ package design;
 
 import design.Constants.Attractions;
 import design.model.Guest;
+import design.repository.AttractionsList;
 import design.service.FilteringMethods;
 
 import java.util.List;
@@ -16,6 +17,8 @@ public class GuestManager {
 
 
     public static void main(String[] args) {
+
+
 
         List<Guest> sortGuestsIntoNameAgeCategories = getGuests();
 
@@ -47,6 +50,35 @@ public class GuestManager {
                 .map(FilteringMethods::priceForTwo)
                 .reduce(0, (a, b) -> a + b)
         );
+
+        List<Attractions> allAttractionsSevenCostOrless = getAttractions();
+        System.out.println(
+                allAttractionsSevenCostOrless.stream()
+                .filter(FilteringMethods::isSevenOrLess)
+                .collect(toList())
+        );
+
+        List<Attractions> sortAttractionsByPrice = getAttractions();
+        System.out.println(
+                sortAttractionsByPrice.stream()
+                .collect(groupingBy(Attractions::getPrice, mapping(Attractions::getName, toList())))
+        );
+
+        Thread partyCountdown = new Thread(() -> {
+            System.out.println("Starting the countdown...");
+            for (int i = 10; i > 0; i--){
+                try {
+                    Thread.sleep(500);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+                System.out.println("Counting down... " + i);
+            }
+            System.out.println("Party's over :<");
+        });
+        partyCountdown.start();
+
+
 
 
 

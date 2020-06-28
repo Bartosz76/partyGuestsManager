@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7eece0c-6345-4ccc-b88b-636b7ff268e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/Constants/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/model/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/repository/GuestList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/repository/GuestList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Timeit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/service/FilteringMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/FilteringMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/design/Constants/Attractions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/Constants/Attractions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/design/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/GuestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/design/service/FilteringMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/service/FilteringMethods.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +48,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -128,7 +125,7 @@
       <updated>1593099991523</updated>
       <workItem from="1593099999334" duration="7562000" />
       <workItem from="1593248720093" duration="70000" />
-      <workItem from="1593248971575" duration="7436000" />
+      <workItem from="1593248971575" duration="14048000" />
     </task>
     <servers />
   </component>
@@ -152,22 +149,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593253253088" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1593257356111">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1593380388499">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593257356111" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1593257356111">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593380388499" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1593380388499">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593257356111" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1593257356111">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593380388499" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1593380388499">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593257356111" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1593257356111">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593380388499" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1593380388499">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593257356111" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593380388499" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593256448615">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -184,13 +181,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1593256448615" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1593250939230">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1593266922265">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593250939230" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593266922265" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1593126011473">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1593126011473" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593268703171">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593268703171" />
   </component>
 </project>

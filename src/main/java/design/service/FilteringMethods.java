@@ -6,11 +6,16 @@ public class FilteringMethods {
 
     public static boolean isLessThanFive(Attractions attractions) {
         return attractions.getPrice() < 5;
+    }
 
+    public static boolean isSevenOrLess(Attractions attractions){
+        return attractions.getPrice() <= 7;
     }
 
     public static int priceForTwo(Attractions attractions){
         return attractions.getPrice() * 2;
     }
+
+
 
 }
