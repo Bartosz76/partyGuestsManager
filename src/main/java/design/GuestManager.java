@@ -74,7 +74,22 @@ public class GuestManager {
             }
             System.out.println("Party's over :<");
         });
+
+
+        Thread partySlowerCountdown = new Thread(() -> {
+            System.out.println("Starting the slower countdown...");
+            for (int i = 10; i > 0; i--){
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Slowly counting down..." + i + ANSI_BLUE);
+            }
+            System.out.println("It's really over :-/");
+        });
         partyCountdown.start();
+        partySlowerCountdown.start();
 
 
 
