@@ -1,99 +1,137 @@
 package design;
 
-import design.Constants.Attractions;
-import design.model.Guest;
-import design.service.FilteringMethods;
+import java.util.Scanner;
 
-import java.util.List;
-
-import static design.repository.AttractionsList.getAttractions;
-import static design.repository.GuestList.getGuests;
-import static java.util.stream.Collectors.*;
 import static design.Constants.TextColors.*;
+import static design.service.StreamMethods.*;
+import static design.service.StreamSupportingMethods.guestsLeaving;
 
 public class GuestManager {
 
 
     public static void main(String[] args) {
 
-
-
-        List<Guest> sortGuestsIntoNameAgeCategories = getGuests();
-
-        System.out.println(
-                sortGuestsIntoNameAgeCategories.stream()
-                        .collect(toMap(
-                                guest -> guest.getName() + "-" + guest.getAge(),
-                                guest -> guest
-                        )) + ANSI_BLUE
-        );
-
-        List<Guest> sortGuestsIntoNameCategories = getGuests();
-        System.out.println(
-                sortGuestsIntoNameCategories.stream()
-                                            .collect(groupingBy(Guest::getName)) + ANSI_PURPLE
-        );
-
-        List<Guest> groupAgesOfGuestWithSameName = getGuests();
-        System.out.println(
-                groupAgesOfGuestWithSameName.stream()
-                .collect(groupingBy(Guest::getName,
-                        mapping(Guest::getAge, toList()))) + ANSI_GREEN
-        );
-
-        List<Attractions> priceOfAllAttractionsLessThanFiveCostForTwoGuests = getAttractions();
-        System.out.println(
-                priceOfAllAttractionsLessThanFiveCostForTwoGuests.stream()
-                .filter(FilteringMethods::isLessThanFive)
-                .map(FilteringMethods::priceForTwo)
-                .reduce(0, (a, b) -> a + b) + ANSI_RED
-        );
-
-        List<Attractions> allAttractionsSevenCostOrless = getAttractions();
-        System.out.println(
-                allAttractionsSevenCostOrless.stream()
-                .filter(FilteringMethods::isSevenOrLess)
-                .collect(toList())
-        );
-
-        List<Attractions> sortAttractionsByPrice = getAttractions();
-        System.out.println(
-                sortAttractionsByPrice.stream()
-                .collect(groupingBy(Attractions::getPrice, mapping(Attractions::getName, toList())))
-        );
-
-        Thread partyCountdown = new Thread(() -> {
-            System.out.println("Starting the countdown...");
-            for (int i = 10; i > 0; i--){
-                try {
-                    Thread.sleep(500);
-                }catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-                System.out.println("Counting down... " + i + ANSI_CYAN);
+        boolean appIsRunning = true;
+        while (appIsRunning) {
+            System.out.println("Welcome to Console Party Manager!");
+            try {
+                Thread.sleep(250);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            System.out.println("Party's over :<");
-        });
+            System.out.println("See your management options below and select the appropriate one:");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("1. Sort guests into name and age categories.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("2. Sort guests into name categories.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("3. Group all ages of guests with the same name.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("4. Count the price of all attractions for less than 5 for two guests.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("5. Show all attractions that cost 7 or less.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("6. Sort attractions by price.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("7. Finish the part.");
 
+            Scanner scanner = new Scanner(System.in);
+            int chosenOptionNumber = scanner.nextInt();
 
-        Thread partySlowerCountdown = new Thread(() -> {
-            System.out.println("Starting the slower countdown...");
-            for (int i = 10; i > 0; i--){
+            if (chosenOptionNumber == 1) {
+                setSortGuestsIntoNameAgeCategories();
                 try {
-                    Thread.sleep(1000);
+                    Thread.sleep(250);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("Slowly counting down..." + i + ANSI_BLUE);
+                System.out.println("Thank you! Please, choose the next action." + ANSI_GREEN);
             }
-            System.out.println("It's really over :-/");
-        });
-        partyCountdown.start();
-        partySlowerCountdown.start();
 
+            if (chosenOptionNumber == 2) {
+                sortGuestIntoNameCategories();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thank you! Please, choose the next action." + ANSI_CYAN);
+            }
 
+            if (chosenOptionNumber == 3) {
+                groupAgesofGuestsWithSameName();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thank you! Please, choose the next action." + ANSI_BLUE);
+            }
 
+            if (chosenOptionNumber == 4) {
+                priceOfAllAttractionsLessThanFiveCostForTwoGuests();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thank you! Please, choose the next action." + ANSI_PURPLE);
+            }
 
+            if (chosenOptionNumber == 5) {
+                allAttractionsSevenCostOrLess();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thank you! Please, choose the next action." + ANSI_RED);
+            }
+
+            if (chosenOptionNumber == 6) {
+                sortAttractionsByPrice();
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("Thank you! Please, choose the next action." + ANSI_CYAN);
+
+            }
+
+            if (chosenOptionNumber == 7) {
+                guestsLeaving();
+                appIsRunning = false;
+            }
+        }
 
 
     }
