@@ -19,7 +19,9 @@ public class AttractionsList {
                 DARTS,
                 FUSSBALL,
                 MINI_GOLF,
-                DANCEFLOOR_ACCESS
+                DANCEFLOOR_ACCESS,
+                MINI_POOL,
+                TAXI
         );
     }
 }

@@ -71,6 +71,18 @@ public class StreamMethods {
         );
     }
 
+    /*
+    * BELOW ARE ABOVE METHODS MODIFIED FOR TESTING PURPOSES
+    */
+
+    public static void allAttractionsSevenCostOrLessRequiringParameter(List<Attractions> listParameter){
+        System.out.println(
+                listParameter.stream()
+                        .filter(StreamSupportingMethods::isSevenOrLess)
+                        .collect(toList())
+        );
+    }
+
 
 
 }
