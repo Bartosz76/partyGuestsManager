@@ -3,7 +3,9 @@ package design.service;
 import design.Constants.Attractions;
 import design.model.Guest;
 
+import javax.swing.text.html.Option;
 import java.util.List;
+import java.util.Optional;
 
 import static design.repository.GuestList.getGuests;
 
@@ -15,10 +17,8 @@ import static design.Constants.TextColors.*;
 public class StreamMethods {
 
     public static void setSortGuestsIntoNameAgeCategories() {
-        List<Guest> sortGuestsIntoNameAgeCategories = getGuests();
-
         System.out.println(
-                sortGuestsIntoNameAgeCategories.stream()
+                getGuests().stream()
                         .collect(toMap(
                                 guest -> guest.getName() + "-" + guest.getAge(),
                                 guest -> guest
@@ -27,27 +27,24 @@ public class StreamMethods {
     }
 
     public static void sortGuestIntoNameCategories() {
-        List<Guest> sortGuestsIntoNameCategories = getGuests();
         System.out.println(
-                sortGuestsIntoNameCategories.stream()
+                getGuests().stream()
                         .collect(groupingBy(Guest::getName)) + ANSI_PURPLE
         );
 
     }
 
     public static void groupAgesofGuestsWithSameName() {
-        List<Guest> groupAgesOfGuestWithSameName = getGuests();
         System.out.println(
-                groupAgesOfGuestWithSameName.stream()
+                getGuests().stream()
                         .collect(groupingBy(Guest::getName,
                                 mapping(Guest::getAge, toList()))) + ANSI_GREEN
         );
     }
 
     public static void priceOfAllAttractionsLessThanFiveCostForTwoGuests() {
-        List<Attractions> priceOfAllAttractionsLessThanFiveCostForTwoGuests = getAttractions();
         System.out.println(
-                priceOfAllAttractionsLessThanFiveCostForTwoGuests.stream()
+                getAttractions().stream()
                         .filter(StreamSupportingMethods::isLessThanFive)
                         .map(StreamSupportingMethods::priceForTwo)
                         .reduce(0, (a, b) -> a + b) + ANSI_RED
@@ -55,20 +52,22 @@ public class StreamMethods {
     }
 
     public static void allAttractionsSevenCostOrLess(){
-        List<Attractions> allAttractionsSevenCostOrLess = getAttractions();
         System.out.println(
-                allAttractionsSevenCostOrLess.stream()
+                getAttractions().stream()
                         .filter(StreamSupportingMethods::isSevenOrLess)
                         .collect(toList())
         );
     }
 
     public static void sortAttractionsByPrice(){
-        List<Attractions> sortAttractionsByPrice = getAttractions();
         System.out.println(
-                sortAttractionsByPrice.stream()
+                getAttractions().stream()
                         .collect(groupingBy(Attractions::getPrice, mapping(Attractions::getName, toList())))
         );
+    }
+
+    public static Optional<String> findingANameIfPresent(String name){
+        Optional<String> findTheName =
     }
 
     /*

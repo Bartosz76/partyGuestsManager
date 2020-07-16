@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a7eece0c-6345-4ccc-b88b-636b7ff268e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/repository/AttractionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/repository/AttractionsList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/repository/AttractionsList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/repository/AttractionsList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/service/StreamMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/service/StreamMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -48,7 +45,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../consoleblog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -174,6 +171,10 @@
       <workItem from="1593542020025" duration="571000" />
       <workItem from="1593704535165" duration="4858000" />
       <workItem from="1593811614923" duration="979000" />
+      <workItem from="1593855784928" duration="603000" />
+      <workItem from="1594237873405" duration="2407000" />
+      <workItem from="1594498877791" duration="555000" />
+      <workItem from="1594842779634" duration="1927000" />
     </task>
     <servers />
   </component>
@@ -193,10 +194,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1593247994364" />
-    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1593436615711">
+    <state x="548" y="172" key="FileChooserDialogImpl" timestamp="1594846110638">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593436615711" />
+    <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594846110638" />
     <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1593811988091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -21,5 +21,7 @@ class Tests {
         assertThat(isSevenOrLess(Attractions.MINI_GOLF)).isNotEqualTo(false);
     }
 
+    void
+
 
 }
