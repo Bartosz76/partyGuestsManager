@@ -66,9 +66,7 @@ public class StreamMethods {
         );
     }
 
-    public static Optional<String> findingANameIfPresent(String name){
-        Optional<String> findTheName =
-    }
+
 
     /*
     * BELOW ARE ABOVE METHODS MODIFIED FOR TESTING PURPOSES
@@ -80,6 +78,15 @@ public class StreamMethods {
                         .filter(StreamSupportingMethods::isSevenOrLess)
                         .collect(toList())
         );
+    }
+
+    public static Optional<String> findingANameIfPresent(String name){
+        Optional<String> findTheName = getAttractions().stream()
+                .filter(e -> e.getName().equals(name))
+                .map(Attractions::getName)
+                .findFirst();
+
+        return findTheName;
     }
 
 

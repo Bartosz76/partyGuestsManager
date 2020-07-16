@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7eece0c-6345-4ccc-b88b-636b7ff268e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" afterDir="false" />
     </list>
@@ -59,7 +60,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.shouldBeSevenOrLess">
+  <component name="RunManager" selected="JUnit.Tests.shouldReturnAProvidedName">
     <configuration name="GuestManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design.GuestManager" />
       <module name="party-guests-manager" />
@@ -94,6 +95,22 @@
       <option name="PACKAGE_NAME" value="design.service" />
       <option name="MAIN_CLASS_NAME" value="design.service.Tests" />
       <option name="METHOD_NAME" value="shouldBeSevenOrLess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.shouldReturnAProvidedName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party-guests-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="design.service" />
+      <option name="MAIN_CLASS_NAME" value="design.service.Tests" />
+      <option name="METHOD_NAME" value="shouldReturnAProvidedName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,6 +165,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.shouldReturnAProvidedName" />
         <item itemvalue="JUnit.Tests.shouldBeSevenOrLess" />
         <item itemvalue="JUnit.Tests.shouldBeLessThanFive" />
         <item itemvalue="Application.GuestManager" />
@@ -174,7 +192,7 @@
       <workItem from="1593855784928" duration="603000" />
       <workItem from="1594237873405" duration="2407000" />
       <workItem from="1594498877791" duration="555000" />
-      <workItem from="1594842779634" duration="1927000" />
+      <workItem from="1594842779634" duration="5116000" />
     </task>
     <servers />
   </component>
@@ -198,22 +216,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594846110638" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1593811988091">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594894332190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1593811988091" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1593811988091">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594894332190" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594894332189">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1593811988091" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1593811988091">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594894332189" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594894332189">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1593811988091" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1593811988091">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594894332189" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594894332190">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1593811988091" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594894332190" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593811988092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -250,17 +268,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1593126011473" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593439933948">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1594890717153">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593439933948" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1594890717153" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/design/service/Tests.java</url>
-          <line>14</line>
+          <line>16</line>
           <properties class="design.service.Tests" method="shouldBeLessThanFive">
             <option name="EMULATED" value="true" />
           </properties>

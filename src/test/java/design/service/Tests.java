@@ -2,12 +2,14 @@ package design.service;
 
 
 import design.Constants.Attractions;
-import org.junit.Before;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import java.util.Optional;
 
 import static design.service.StreamSupportingMethods.*;
+import static design.service.StreamMethods.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 
 class Tests {
 
@@ -21,7 +23,12 @@ class Tests {
         assertThat(isSevenOrLess(Attractions.MINI_GOLF)).isNotEqualTo(false);
     }
 
-    void
+    @Test
+    void shouldReturnAProvidedName(){
+        assertEquals(Optional.of("Medium drink"), findingANameIfPresent("Medium drink"));
+    }
+
+
 
 
 }

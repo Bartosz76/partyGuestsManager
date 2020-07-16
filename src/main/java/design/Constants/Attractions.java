@@ -3,7 +3,7 @@ package design.Constants;
 public enum Attractions {
 
     LIGHT_DRINK("Light drink", 3),
-    MEDIUM_DIRNK("Medium drunk", 5),
+    MEDIUM_DIRNK("Medium drink", 5),
     HEAVY_DRINK("Heavy drink", 7),
     ALCOHOLFREE_DRINK("Alcoholfree drink", 2),
     LIGHT_MEAL("Light meal", 6),
