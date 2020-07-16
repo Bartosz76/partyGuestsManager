@@ -51,7 +51,7 @@ public class StreamMethods {
         );
     }
 
-    public static void allAttractionsSevenCostOrLess(){
+    public static void allAttractionsSevenCostOrLess() {
         System.out.println(
                 getAttractions().stream()
                         .filter(StreamSupportingMethods::isSevenOrLess)
@@ -59,7 +59,7 @@ public class StreamMethods {
         );
     }
 
-    public static void sortAttractionsByPrice(){
+    public static void sortAttractionsByPrice() {
         System.out.println(
                 getAttractions().stream()
                         .collect(groupingBy(Attractions::getPrice, mapping(Attractions::getName, toList())))
@@ -67,12 +67,7 @@ public class StreamMethods {
     }
 
 
-
-    /*
-    * BELOW ARE ABOVE METHODS MODIFIED FOR TESTING PURPOSES
-    */
-
-    public static void allAttractionsSevenCostOrLessRequiringParameter(List<Attractions> listParameter){
+    public static void allAttractionsSevenCostOrLessRequiringParameter(List<Attractions> listParameter) {
         System.out.println(
                 listParameter.stream()
                         .filter(StreamSupportingMethods::isSevenOrLess)
@@ -80,7 +75,7 @@ public class StreamMethods {
         );
     }
 
-    public static Optional<String> findingANameIfPresent(String name){
+    public static Optional<String> findingANameIfPresent(String name) {
         Optional<String> findTheName = getAttractions().stream()
                 .filter(e -> e.getName().equals(name))
                 .map(Attractions::getName)
@@ -88,7 +83,6 @@ public class StreamMethods {
 
         return findTheName;
     }
-
 
 
 }

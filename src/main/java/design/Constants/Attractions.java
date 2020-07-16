@@ -2,19 +2,19 @@ package design.Constants;
 
 public enum Attractions {
 
-    LIGHT_DRINK("Light drink", 3),
-    MEDIUM_DIRNK("Medium drink", 5),
-    HEAVY_DRINK("Heavy drink", 7),
-    ALCOHOLFREE_DRINK("Alcoholfree drink", 2),
-    LIGHT_MEAL("Light meal", 6),
-    LIGHT_VEGAN_MEAL("Light vegan mean", 7),
-    BIG_MEAL("Big meal", 9),
-    BIG_VEGAN_MEAL("Big vegan meal", 10),
+    LIGHT_DRINK("LightDrink", 3),
+    MEDIUM_DRINK("MediumDrink", 5),
+    HEAVY_DRINK("HeavyDrink", 7),
+    ALCOHOLFREE_DRINK("AlcoholfreeDrink", 2),
+    LIGHT_MEAL("LightMeal", 6),
+    LIGHT_VEGAN_MEAL("LightVeganMeal", 7),
+    BIG_MEAL("BigMeal", 9),
+    BIG_VEGAN_MEAL("BigVeganMeal", 10),
     DARTS("Darts", 3),
     FUSSBALL("Fussball", 4),
-    MINI_GOLF("Mini golf", 4),
-    MINI_POOL("Mini pool", 3),
-    DANCEFLOOR_ACCESS("Dancefloor access", 1),
+    MINI_GOLF("MiniGolf", 4),
+    MINI_POOL("MiniPool", 3),
+    DANCEFLOOR_ACCESS("DancefloorAccess", 1),
     TAXI("Taxi", 6);
 
 

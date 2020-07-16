@@ -25,7 +25,12 @@ class Tests {
 
     @Test
     void shouldReturnAProvidedName(){
-        assertEquals(Optional.of("Medium drink"), findingANameIfPresent("Medium drink"));
+        assertEquals(Optional.of("MediumDrink"), findingANameIfPresent("MediumDrink"));
+    }
+
+    @Test
+    void shouldReturnEmptyOptional(){
+        assertThat(findingANameIfPresent("OrangeJuice").equals(Optional.empty()));
     }
 
 

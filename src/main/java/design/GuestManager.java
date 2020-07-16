@@ -1,5 +1,6 @@
 package design;
 
+import java.util.Optional;
 import java.util.Scanner;
 
 import static design.Constants.TextColors.*;
@@ -61,7 +62,13 @@ public class GuestManager {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("7. Finish the part.");
+            System.out.println("7. Provide the name of the attraction to see if available.");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("8. Finish the party.");
 
             Scanner scanner = new Scanner(System.in);
             int chosenOptionNumber = scanner.nextInt();
@@ -128,6 +135,18 @@ public class GuestManager {
             }
 
             if (chosenOptionNumber == 7) {
+                System.out.println("Please, provide the name of attraction:");
+                String providedName = " ";
+                providedName += scanner.nextLine();
+                scanner.nextLine();
+                Optional<String> result = findingANameIfPresent(providedName);
+                result.ifPresentOrElse(
+                        s -> System.out.println("The attraction is available."),
+                        () -> System.out.println("Attracion not present."));
+                System.out.println("Thank you! Please, choose the next action." + ANSI_BLUE);
+            }
+
+            if (chosenOptionNumber == 8) {
                 guestsLeaving();
                 appIsRunning = false;
             }

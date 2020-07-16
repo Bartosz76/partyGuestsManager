@@ -11,7 +11,7 @@ public class AttractionsList {
     public static List<Attractions> getAttractions() {
      return Arrays.asList(
                 LIGHT_DRINK,
-                MEDIUM_DIRNK,
+             MEDIUM_DRINK,
                 HEAVY_DRINK,
                 ALCOHOLFREE_DRINK,
                 LIGHT_MEAL,
