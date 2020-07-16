@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a7eece0c-6345-4ccc-b88b-636b7ff268e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/Constants/Attractions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/repository/AttractionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/repository/AttractionsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/Constants/Attractions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/Constants/Attractions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/Constants/TextColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/Constants/TextColors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/service/StreamMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/service/StreamMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/design/service/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/design/service/Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/design/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/GuestManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +59,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests.shouldReturnEmptyOptional">
+  <component name="RunManager" selected="Application.GuestManager">
     <configuration name="GuestManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design.GuestManager" />
       <module name="party-guests-manager" />
@@ -188,9 +180,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Tests.shouldReturnEmptyOptional" />
-        <item itemvalue="JUnit.Tests.shouldReturnAProvidedName" />
         <item itemvalue="Application.GuestManager" />
+        <item itemvalue="JUnit.Tests.shouldReturnAProvidedName" />
+        <item itemvalue="JUnit.Tests.shouldReturnEmptyOptional" />
         <item itemvalue="JUnit.Tests.shouldBeSevenOrLess" />
         <item itemvalue="JUnit.Tests.shouldBeLessThanFive" />
       </list>
@@ -216,7 +208,7 @@
       <workItem from="1593855784928" duration="603000" />
       <workItem from="1594237873405" duration="2407000" />
       <workItem from="1594498877791" duration="555000" />
-      <workItem from="1594842779634" duration="10597000" />
+      <workItem from="1594842779634" duration="11413000" />
     </task>
     <servers />
   </component>
@@ -240,22 +232,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594846110638" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594911640828">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594913143414">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594911640828" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594911640828">
+    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
+    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594913143414">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594911640828" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594911640828">
+    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
+    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594913143414">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594911640828" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594911640828">
+    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594913143414">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594911640828" />
+    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593811988092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

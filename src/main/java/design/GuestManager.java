@@ -136,8 +136,7 @@ public class GuestManager {
 
             if (chosenOptionNumber == 7) {
                 System.out.println("Please, provide the name of attraction:");
-                String providedName = " ";
-                providedName += scanner.nextLine();
+                String providedName = scanner.next();
                 scanner.nextLine();
                 Optional<String> result = findingANameIfPresent(providedName);
                 result.ifPresentOrElse(
