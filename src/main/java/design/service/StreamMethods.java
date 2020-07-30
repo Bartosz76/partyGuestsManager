@@ -3,18 +3,21 @@ package design.service;
 import design.Constants.Attractions;
 import design.model.Guest;
 
-import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-import static design.repository.GuestList.getGuests;
-
+import static design.Constants.TextColors.*;
 import static design.repository.AttractionsList.getAttractions;
 import static design.repository.GuestList.getGuests;
 import static java.util.stream.Collectors.*;
-import static design.Constants.TextColors.*;
 
 public class StreamMethods {
+
+    TaxProvider taxProvider;
+
+    public StreamMethods(TaxProvider taxProvider){
+        this.taxProvider = taxProvider;
+    }
 
     public static void setSortGuestsIntoNameAgeCategories() {
         System.out.println(

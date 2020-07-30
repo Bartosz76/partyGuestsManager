@@ -1,6 +1,7 @@
 package design.service;
 
 import design.Constants.Attractions;
+import design.exceptions.IncorrectTaxValueException;
 import design.model.Guest;
 
 import java.util.List;
@@ -11,25 +12,31 @@ import static design.repository.GuestList.getGuests;
 
 public class StreamSupportingMethods {
 
+    TaxProvider taxProvider;
+
+    public StreamSupportingMethods(TaxProvider taxProvider) {
+        this.taxProvider = taxProvider;
+    }
+
     public static boolean isLessThanFive(Attractions attractions) {
         return attractions.getPrice() < 5;
     }
 
-    public static boolean isSevenOrLess(Attractions attractions){
+    public static boolean isSevenOrLess(Attractions attractions) {
         return attractions.getPrice() <= 7;
     }
 
-    public static int priceForTwo(Attractions attractions){
+    public static int priceForTwo(Attractions attractions) {
         return attractions.getPrice() * 2;
     }
 
-    public static void guestsLeaving(){
+    public static void guestsLeaving() {
         Thread guestLeavingCountdown = new Thread(() -> {
             System.out.println("Guests start leaving...");
             List<Guest> guestList = getGuests();
             int indexOfGuests = guestList.size();
 
-            for (int i  = guestList.size(); i > 0; i--){
+            for (int i = guestList.size(); i > 0; i--) {
                 System.out.println(guestList.get(indexOfGuests - 1).getName() + " has left.");
                 indexOfGuests--;
                 try {
@@ -47,7 +54,7 @@ public class StreamSupportingMethods {
             Random randomIndex = new Random();
             int randomItemIndex = randomIndex.nextInt(thefts.size());
 
-            for (int i = guestList.size(); i > 0; i--){
+            for (int i = guestList.size(); i > 0; i--) {
                 try {
                     Thread.sleep(2000);
                 } catch (InterruptedException e) {
@@ -66,6 +73,14 @@ public class StreamSupportingMethods {
 
     }
 
+    public static double priceWithDefaultTax(Attractions attraction) throws IncorrectTaxValueException {
 
+    }
 
+    public static double countThePriceWithIncludedTax(double initialPrice, double taxValue) throws IncorrectTaxValueException {
+        if (taxValue > 0.34) {
+            throw new IncorrectTaxValueException("Tax value cannot be higher than 34% of the initial price of the product.");
+        }
+        return initialPrice * (1 + taxValue);
+    }
 }

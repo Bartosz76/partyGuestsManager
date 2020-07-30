@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a7eece0c-6345-4ccc-b88b-636b7ff268e3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/GuestManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/design/GuestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/design/GuestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/StreamMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/service/StreamSupportingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/design/service/StreamSupportingMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/design/service/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/design/service/Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/design/service/Tests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,7 @@
       <list>
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,26 +63,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GuestManager">
+  <component name="RunManager" selected="JUnit.Tests.shouldDoubleTheAmount">
     <configuration name="GuestManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="design.GuestManager" />
       <module name="party-guests-manager" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tests.shouldBeLessThanFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="party-guests-manager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="design.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="design.service" />
-      <option name="MAIN_CLASS_NAME" value="design.service.Tests" />
-      <option name="METHOD_NAME" value="shouldBeLessThanFive" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,6 +82,22 @@
       <option name="PACKAGE_NAME" value="design.service" />
       <option name="MAIN_CLASS_NAME" value="design.service.Tests" />
       <option name="METHOD_NAME" value="shouldBeSevenOrLess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.shouldDoubleTheAmount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="party-guests-manager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="design.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="design.service" />
+      <option name="MAIN_CLASS_NAME" value="design.service.Tests" />
+      <option name="METHOD_NAME" value="shouldDoubleTheAmount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.shouldDoubleTheAmount" />
         <item itemvalue="Application.GuestManager" />
         <item itemvalue="JUnit.Tests.shouldReturnAProvidedName" />
         <item itemvalue="JUnit.Tests.shouldReturnEmptyOptional" />
         <item itemvalue="JUnit.Tests.shouldBeSevenOrLess" />
-        <item itemvalue="JUnit.Tests.shouldBeLessThanFive" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +212,18 @@
       <workItem from="1593855784928" duration="603000" />
       <workItem from="1594237873405" duration="2407000" />
       <workItem from="1594498877791" duration="555000" />
-      <workItem from="1594842779634" duration="11413000" />
+      <workItem from="1594842779634" duration="13714000" />
+      <workItem from="1594923083999" duration="592000" />
+      <workItem from="1595013679738" duration="911000" />
+      <workItem from="1595080509547" duration="1169000" />
+      <workItem from="1595261869740" duration="1186000" />
+      <workItem from="1595347100253" duration="588000" />
+      <workItem from="1595455739447" duration="589000" />
+      <workItem from="1595759166158" duration="1281000" />
+      <workItem from="1595777465834" duration="7113000" />
+      <workItem from="1595953827796" duration="588000" />
+      <workItem from="1596013092942" duration="1191000" />
+      <workItem from="1596067909227" duration="621000" />
     </task>
     <servers />
   </component>
@@ -220,10 +235,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="539" y="78" key="#GuestManager/0.0.1536.834@0.0.1536.834" timestamp="1593249879522" />
-    <state x="574" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1593254521897">
+    <state x="574" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1595845717726">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1593254521897" />
+    <state x="574" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1595845717726" />
     <state x="432" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593247994364">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -232,22 +247,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="548" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1594846110638" />
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom" timestamp="1594913143414">
+    <state width="1492" height="213" key="GridCell.Tab.0.bottom" timestamp="1595803518437">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
-    <state width="1493" height="213" key="GridCell.Tab.0.center" timestamp="1594913143414">
+    <state width="1492" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1595803518437" />
+    <state width="1492" height="213" key="GridCell.Tab.0.center" timestamp="1595803518437">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
-    <state width="1493" height="213" key="GridCell.Tab.0.left" timestamp="1594913143414">
+    <state width="1492" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1595803518437" />
+    <state width="1492" height="213" key="GridCell.Tab.0.left" timestamp="1595803518437">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
-    <state width="1493" height="213" key="GridCell.Tab.0.right" timestamp="1594913143414">
+    <state width="1492" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1595803518437" />
+    <state width="1492" height="213" key="GridCell.Tab.0.right" timestamp="1595803518437">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1594913143414" />
+    <state width="1492" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1595803518437" />
     <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1593811988092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -280,6 +295,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="540" y="121" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.834@0.0.1536.834" timestamp="1593720715470" />
+    <state x="209" y="120" key="new project wizard" timestamp="1595766751267">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="209" y="120" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1595766751267" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1593126011473">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -294,7 +313,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/design/service/Tests.java</url>
-          <line>16</line>
+          <line>30</line>
           <properties class="design.service.Tests" method="shouldBeLessThanFive">
             <option name="EMULATED" value="true" />
           </properties>
@@ -302,7 +321,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/design/service/StreamSupportingMethods.java</url>
-          <line>18</line>
+          <line>25</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
